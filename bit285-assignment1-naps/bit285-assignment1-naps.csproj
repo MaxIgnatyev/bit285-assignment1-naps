@@ -8,4 +8,32 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Naps\" />
+    <Folder Include="Views\wwwroot\" />
+    <Folder Include="Views\wwwroot\Images\" />
+    <Folder Include="Views\Shared\styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\account-info.html" />
+    <None Remove="Views\confirm-account.html" />
+    <None Remove="Views\login.html" />
+    <None Remove="Views\naps.css" />
+    <None Remove="Views\password-info.html" />
+    <None Remove="Views\select-password.html" />
+    <None Remove="Views\Shared\naps.css" />
+    <None Remove="Views\wwwroot\naps.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\ConfirmAccount.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\wwwroot\naps.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
